@@ -1,0 +1,23 @@
+package numericalData;
+
+public class CircleComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double radius = 1.2;
+		double area;
+		double circumference;
+		final double PI = 3.14159265;
+		
+		area = radius* radius * PI;
+		circumference = 2.0 * radius * PI;
+		
+		System.out.println("The radius is " + radius);
+		System.out.println("The area is " + area);
+		System.out.println("The circumference is " + circumference);
+		
+		
+		
+	}
+
+}
