@@ -1,0 +1,89 @@
+package numericalData;
+
+import java.util.Scanner; //Method Scanner is used to key in data from keyboard or from user
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Variable Declaration
+		String name;
+		char gred;
+		//int -> data type; number1-5 -> variable name; = -> assign; 11 -> value
+		int number1 = 11;
+		int number2 = 22;
+		int number3 = 33;
+		int number4 = 44;
+		int number5 = 55;
+		int number6 = 66;
+		float number7 = 77;
+		float number8 = 100;
+		double number9 = 88;
+		double number10 = 99;
+		
+		int sum; //Declare an integer variable called sum to hold the sum
+		int sum2;
+		int sum3;
+		float sum4;
+		double sum5;
+		int average;
+		double sum6;
+		
+		//Input Scanner
+		Scanner scanMe = new Scanner (System.in); //new -> create new object
+		
+		System.out.println("Enter your name: ");
+		name = scanMe.nextLine();
+		System.out.println("Enter your cgpa: ");
+		number9 = scanMe.nextDouble();
+		System.out.println("Enter your gred for Math in SPM: ");
+		gred = scanMe.next().charAt(0);
+		System.out.println("Enter Number1:"); //Statement for input data
+		number1 = scanMe.nextInt(); // nextInt() -> input data jenis integer
+		System.out.println("Enter Number2:"); 
+		number2 = scanMe.nextInt(); 
+		
+		System.out.println("My name is " + name);
+		System.out.println("CGPA =" + number9);
+		System.out.println("Number1 =" + number1);
+		System.out.println("Number2 =" + number2);
+		System.out.println("GRED MATH SPM =" + gred);
+		
+		//arithmetic statement
+		sum = number1 + number2 + number3 + number4 + number5 + number6;
+		sum2 = number6 - number1;
+		sum3 = number1 * number2 * number3 * number4 * number5 * number6;
+		sum4 = number8/ number7;
+		sum5 = number10/ number9;
+		average = (number1 + number2 + number3 + number4 + number5 + number6)/ 6;
+		//average = sum/6
+		sum6 = sum4 + sum5;
+		
+		System.out.print("The sum is ");
+		System.out.println(sum);
+		//System.out.println("The sum is " + sum );
+		
+		System.out.print("The sum is ");
+		System.out.println(sum2);
+		//System.out.println("The sum is " + sum2 );
+		
+		System.out.print("The sum is ");
+		System.out.println(sum3);
+		
+		System.out.print("The sum is ");
+		System.out.printf("%.2f",sum4);
+		System.out.println();
+		
+		System.out.print("The sum is ");
+		System.out.printf("%.2f",sum5);
+		System.out.println();
+		
+		System.out.print("The average of 6 integer are ");
+		System.out.println(average);
+		
+		System.out.print("The sum is ");
+		System.out.printf("%.2f", sum6);
+		System.out.println();
+	}
+
+}
